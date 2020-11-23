@@ -3,17 +3,9 @@
     "module": "commonjs",
     "esModuleInterop": true,
     "target": "es6",
-    "noImplicitAny": true,
     "moduleResolution": "node",
     "sourceMap": true,
-    "rootDir": "src",
-    "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "*": [
-        "node_modules/*"
-      ]
-    }
+    "outDir": "dist"
   },
   "include": [
     "src/**/*"
