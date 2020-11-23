@@ -8,7 +8,7 @@ on:
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   RUN_REGION: us-central1
-  SERVICE_NAME: service-name
+  SERVICE_NAME: cloud-run-template
 
 
 jobs:
