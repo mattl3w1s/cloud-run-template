@@ -1,16 +1,16 @@
-#name: Build and Deploy to Cloud Run
-#
-#on:
-#  push:
-#    branches:
-#      - master
-#
-#env:
-#  PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
-#  RUN_REGION: us-central1
-#  SERVICE_NAME: registration-processor
-#
-#
+name: Build and Deploy to Cloud Run
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+  RUN_REGION: us-central1
+  SERVICE_NAME: service-name
+
+
 jobs:
   setup-build-deploy:
     name: Setup, Build, and Deploy
