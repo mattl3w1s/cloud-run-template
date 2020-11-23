@@ -1,20 +1,19 @@
 import express from 'express';
 const app = express();
-import bodyParser from "body-parser";
-
+import bodyParser from 'body-parser';
 
 async function bootstrap() {
-    app.use(bodyParser.json());
+  app.use(bodyParser.json());
 
-    app.get('/', async (req, res) => {
-        res.status(200).send('Hello, world!');
-    });
+  app.get('/', async (req, res) => {
+    res.status(200).send('Hello, world!');
+  });
 
-    const port = process.env.PORT || 8080;
+  const port = process.env.PORT || 8080;
 
-    app.listen(port, () => {
-        console.log(`Listening on port ${port}`);
-    });
+  app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+  });
 }
 
-bootstrap().catch(err => console.error(err));
+bootstrap().catch((err) => console.error(err));
